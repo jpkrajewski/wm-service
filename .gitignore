@@ -1,0 +1,26 @@
+# secrets / deploy state — never commit
+.deploy/
+*.key
+*.pem
+.env
+deploy.local.env
+
+# vendored research repos (cloned at deploy time by bootstrap.sh)
+repos/
+extra/
+docker/wheels/
+docker/aotriton/
+
+# model weights (pulled at runtime)
+*.pth
+*.safetensors
+*.ckpt
+weights/
+
+# data / outputs
+data/
+out/
+*.log
+__pycache__/
+*.pyc
+.venv*/
